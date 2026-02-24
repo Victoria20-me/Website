@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  /* border-width: 10px;
+    border-color: blue;
+    border-style: solid; */
+  border: 10px blue solid;
+  /* padding: 40px; */
+  /* padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 50px; */
+  /* padding: 10px 20px 40px 50px; */
+  padding: 10px 30px 70px;
+  margin: 10px 20px 30px 15px;
+  /* position: fixed;
+    width: 100%; */
+}
+.text p {
+  padding-top: 120px;
+}
+span {
+  border: 5px aquamarine solid;
+  border-radius: 10px;
+}
+div {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* width: 30%; */
+  /* position: sticky;
+    top: 0; */
+
+  /* flex-direction: row-reverse;
+    flex-wrap: wrap ; */
+}
+p {
+  order: 1;
+}
+h3 {
+  order: 2;
+}
+h2 {
+  order: 3;
+}
+.sticky {
+  /* position: sticky;
+    top: 0; */
+  /* position: relative; */
+}
+/* .sticky p{
+    position: absolute;
+    left: 930px;
+    top: 400px;
+    width: 70%;
+} */
+p:focus {
+  background-color: red;
+  color: white;
+}
+/* a:active{
+    color: yellow;
+} */
+
+footer {
+  background-color: red;
+  color: white;
+  position: relative;
+  animation-name: footerAnimation;
+  animation-delay: 2s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  width: 60%;
+
+}
+@keyframes footerAnimation {
+  from {
+    left: 0px;
+    background-color: blue;
+  }
+  to {
+    left: 300px;
+    background-color: brown !important;
+    background-color: aquamarine;
+  }
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+     grid-template-rows: 500px;
+     justify-content: center;
+     /* align-items: center; */
+     /* grid-auto-columns: 200px ; */
+    row-gap: 60px;
+    width: 100%;
+}
+
+
+p{
+    /* width: 60%; */
+    border: 2px solid red;
+}

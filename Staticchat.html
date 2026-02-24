@@ -4,47 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" ,initial-scale="1.0" />
     <meta keywords="" />
+    <link rel="stylesheet" href="staticchat.css" />
     <title>Chat Room</title>
   </head>
   <body>
-    <header>
-      <h1>Chat Room</h1>
-    </header>
-    <main>
-      <section id="chat history" />
-      <article>
-        <p><strong>YOU</strong><br />How are you</p>
-        <time datetime="2026-02-11T14:51">2:51 PM</time>
-      </article>
-      <article>
-        <p>
-          <strong>YEMI:</strong> <br />Thanks for the message! i'll be in touch
-          shortly
-        </p>
-        <time datetime="2026-02-11T14:51">2:51PM</time>
-      </article>
-      <article>
-        <p><strong>YOU</strong><br />How was your assignment</p>
-        <time datetime="2026-02-11T14:51">3:19PM</time>
-      </article>
-      <article>
-        <p>
-          <strong>AISHA:</strong><br />Thanks for contacting me.I'll get back to
-          you shortly.
-        </p>
-        <time datetime="2026-02-11T14:15">3:19PM</time>
-      </article>
-      <article>
-        <p><strong>YOU:</strong><br />Okay would talk to you later</p>
-        <time datetime="2026-02-11T14:15">3:50</time>
-      </article>
-      <section id="chat imput">
-        <form>
-            <label for="msg">Message</label><br>
-            <input id="msg" type="text" placeholder="Start typing">
-            <button type="submit">send</button>
-        </form>
-      </section>
-    </main>
+    <div class="chat container">
+      <div class="header">
+        <h2>Chat Room</h2>
+      </div>
+      <main class="chat-body">
+        <section id="chat-history">
+          <article class="message sent">
+            <p><strong>YOU</strong><br />How are you</p>
+            <time datetime="2026-02-11T14:51">2:51 PM</time>
+          </article>
+          <article class="message recieved">
+            <p>
+              <strong>YEMI:</strong> <br />Thanks for the message! i'll be in
+              touch shortly
+            </p>
+            <time datetime="2026-02-11T14:51">2:51PM</time>
+          </article>
+          <article class="message sent">
+            <p><strong>YOU</strong><br />How was your assignment</p>
+            <time datetime="2026-02-11T14:51">3:19PM</time>
+          </article>
+          <article class="message recieved">
+            <p>
+              <strong>AISHA:</strong><br />Thanks for contacting me.I'll get
+              back to you shortly.
+            </p>
+            <time datetime="2026-02-11T14:15">3:19PM</time>
+          </article>
+          <article class="message sent">
+            <p><strong>YOU:</strong><br />Okay would talk to you later</p>
+            <time datetime="2026-02-11T14:15">3:50</time>
+          </article>
+        </section>
+        <div id="chat-input">
+          <div class="msg">
+            <input id="msg" type="text" placeholder="Start typing" />
+            <button class="submit" type="submit">send message</button>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
